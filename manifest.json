@@ -2,5 +2,10 @@
     "name": "Boat 3 Importer",
     "description": "Importiert Zeiten in Boat Version 3",
     "version": "0.1",
-    "author": "envoe"
+    "manifest_version": 2,
+    "author": "envoe", 
+    "browser_action": {
+        "default_popup": "HTML/home.html",
+        "default_title": "Boat 3 Importer"
+    }
 }
