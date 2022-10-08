@@ -12,6 +12,7 @@
     }, 
     "action": {
         "default_popup": "popup.html",
+        "default_title": "Boat 3 Importer",
         "default_icon": {
             "128": "/media/icon.png"
         }
@@ -24,6 +25,6 @@
         "tabs"
     ],
     "host_permissions": [
-        "https://www.google.com/*"
+        "https://www.boat.bva.bund.de/meinetaetigkeiten/*"
     ]
 }
