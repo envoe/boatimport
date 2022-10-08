@@ -1,11 +1,29 @@
 {
     "name": "Boat 3 Importer",
     "description": "Importiert Zeiten in Boat Version 3",
-    "version": "0.1",
-    "manifest_version": 2,
+    "version": "0.1.0",
+    "manifest_version": 3,
     "author": "envoe", 
-    "browser_action": {
-        "default_popup": "HTML/home.html",
-        "default_title": "Boat 3 Importer"
-    }
+    "icons" : {
+        "128": "/media/icon.png"
+    },
+    "background": {
+        "service_worker": "background.js"
+    }, 
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "128": "/media/icon.png"
+        }
+    },
+    "options_page": "options.html",
+    "permissions": [
+        "storage", 
+        "activeTab", 
+        "scripting", 
+        "tabs"
+    ],
+    "host_permissions": [
+        "https://www.google.com/*"
+    ]
 }
